@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 import time
 import asyncio
+from datetime import datetime
 
 load_dotenv()
 
@@ -31,7 +32,7 @@ class lobbycontainer(discord.ui.LayoutView):
 
 class Level_1_n1(discord.ui.LayoutView):
     container1 = discord.ui.Container(
-        discord.ui.TextDisplay(content="# Recording 10:30"),
+        discord.ui.TextDisplay(content=f"# Recording 10:30"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
@@ -59,7 +60,7 @@ class Level_1_n2(discord.ui.LayoutView):
   def __init__(self, user):
     super().__init__()    
     container1 = discord.ui.Container(
-        discord.ui.TextDisplay(content="# Recording 10:30"),
+        discord.ui.TextDisplay(content="# Recording 10:32"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
@@ -98,11 +99,13 @@ class Level_1_n3(discord.ui.LayoutView):
         discord.ui.ActionRow(
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
+                    label="\u200b",
                     disabled=True,
                     custom_id="573ed2c54f374686c8beef2714381c8f",
                 ),
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
+                    label="\u200b",
                     disabled=True,
                     custom_id="a901ab7a10dc4a9398df20b2a2fd562d",
                 ),
@@ -172,11 +175,11 @@ class Level_1_n6(discord.ui.LayoutView):
     def __init__(self, user):
         super().__init__()   
         container1 = discord.ui.Container(
-        discord.ui.TextDisplay(content="# Recording 10:35"),
+        discord.ui.TextDisplay(content="# Recording 10:36"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_5.png",
+                media="attachment://screen_6.png",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -186,7 +189,7 @@ class Level_1_n6(discord.ui.LayoutView):
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
                     label="Continue walking",
-                    custom_id="573ed2c54f374686c8beef2714381c8f",
+                    custom_id="button-continue-walking-2",
                 ),
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
@@ -198,52 +201,71 @@ class Level_1_n6(discord.ui.LayoutView):
     )
         self.add_item(container1)
 
+
 class Level_1_n7(discord.ui.LayoutView):    
     container1 = discord.ui.Container(
-        discord.ui.TextDisplay(content="# - Recording <t:1791449160:t>"),
+        discord.ui.TextDisplay(content="# Recording 10:37"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="https://i.imgur.com/ll6Lp64.jpeg",
+                media="attachment://screen_7.png",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.ActionRow(
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
-                    label="<--",
-                    custom_id="button-left-level-1-n-8",
-                ),
-                discord.ui.Button(
-                    style=discord.ButtonStyle.secondary,
-                    label="You still have your sanity.",
+                    label="\u200b",
                     disabled=True,
-                    custom_id="button-drink-level-1",
-                ),
-        ),
-    )    
-
-class Level_1_n8(discord.ui.LayoutView):    
-    container1 = discord.ui.Container(
-        discord.ui.TextDisplay(content="# - Recording <t:1791448860:t>"),
-        discord.ui.MediaGallery(
-            discord.MediaGalleryItem(
-                media="https://preview.redd.it/deep-hole-in-the-floor-v0-7ks2hy7vzoqc1.jpg?width=640&format=pjpg&auto=webp&s=2ca7490db650e42996f6d4a96a9f0598ad77a6a1",
-            ),
-        ),
-        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
-        discord.ui.ActionRow(
-                discord.ui.Button(
-                    style=discord.ButtonStyle.secondary,
-                    label="Throw myself",
-                    custom_id="button-level-1-exit",
+                    custom_id="573ed2c54f374686c8beef2714381c8f",
                 ),
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
-                    label="-->",
-                    custom_id="button-right-level-1-n-7",
+                    label="\u200b",
+                    disabled=True,
+                    custom_id="a901ab7a10dc4a9398df20b2a2fd562d",
                 ),
         ),
     )
+
+class Level_1_n8(discord.ui.LayoutView):    
+    container1 = discord.ui.Container(
+        discord.ui.TextDisplay(content="# Recording 10:38"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(
+            discord.MediaGalleryItem(
+                media="attachment://screen_8.png",
+            ),
+        ),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="\u200b",
+                    disabled=True,
+                    custom_id="573ed2c54f374686c8beef2714381c8f",
+                ),
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="\u200b",
+                    disabled=True,
+                    custom_id="a901ab7a10dc4a9398df20b2a2fd562d",
+                ),
+        ),
+    )
+
+class Level_1_n9(discord.ui.LayoutView):
+    container1 = discord.ui.Container(
+        discord.ui.TextDisplay(content="# Recording 10:38"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(discord.MediaGalleryItem(media="attachment://screen_9.png"),),
+        discord.ui.Separator(visible=True,spacing=discord.SeparatorSpacing.small),
+        discord.ui.TextDisplay(content="**Jonh:** Oh no"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(discord.ui.Button(style=discord.ButtonStyle.secondary,label='Say: "is this supposed to be like this?"',custom_id="is-this-supposed-to-be-like-this"),discord.ui.Button(style=discord.ButtonStyle.secondary,label='Shout: "HELP!"',custom_id="button-shout-help"))
+        )
+
+
 
 
 
@@ -269,15 +291,23 @@ async def on_interaction(interaction: discord.Interaction):
         )
         await canal.send(view=Level_1_n1(), files=[discord.File("assets/screen_1.png")])
     elif cid == "button-how-long-until-we-leave":
-        await interaction.response.edit_message(view=Level_1_n2(interaction.user.display_name), files=[discord.File("assets/screen_2.png")])
+        await interaction.response.edit_message(view=Level_1_n2(interaction.user.display_name), attachments=[discord.File("assets/screen_2.png")])
     elif cid == "button-continue-walking":
-        await interaction.response.edit_message(view=Level_1_n3(), files=[discord.File("assets/screen_3.png")])
+        message=interaction.message
+        await interaction.response.edit_message(view=Level_1_n3(), attachments=[discord.File("assets/screen_3.png")])
         await asyncio.sleep(2)
-        await interaction.response.edit_message(view=Level_1_n4(), files=[discord.File("assets/screen_4.png")])
+        await message.edit(view=Level_1_n4(), attachments=[discord.File("assets/screen_4.png")])
     elif cid == "what-was-that":
-        await interaction.response.edit_message(view=Level_1_n5(interaction.user.display_name), files=[discord.File("assets/screen_5.png")])
+        await interaction.response.edit_message(view=Level_1_n5(interaction.user.display_name), attachments=[discord.File("assets/screen_5.png")])
     elif cid == "i-think-i-saw-someone":
-        await interaction.response.edit_message(view=Level_1_n6(interaction.user.display_name), files=[discord.File("assets/screen_5.png")])
+        await interaction.response.edit_message(view=Level_1_n6(interaction.user.display_name), attachments=[discord.File("assets/screen_6.png")])
+    elif cid == "button-continue-walking-2":
+        message= interaction.message
+        await interaction.response.edit_message(view=Level_1_n7(), attachments=[discord.File("assets/screen_7.png")])
+        await asyncio.sleep(2)
+        await message.edit(view=Level_1_n8(), attachments=[discord.File("assets/screen_8.png")])
+        await asyncio.sleep(2)
+        await message.edit(view=Level_1_n9(), attachments=[discord.File("assets/screen_9.png")])
 
           
 
@@ -294,6 +324,7 @@ async def on_interaction(interaction: discord.Interaction):
                 )
         #await canal.send(view=Level_2_n1())
         await interaction.channel.delete()
+        
 
 
 
