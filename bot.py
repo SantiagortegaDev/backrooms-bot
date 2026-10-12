@@ -170,6 +170,28 @@ class Level_1_n5(discord.ui.LayoutView):
     self.add_item(container1)
 
 
+class Level_1_n10(discord.ui.LayoutView):
+    def __init__(self, user):
+        super().__init__()
+        container1= discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:36"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(media="attachment://screen_6.png"
+                )
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.TextDisplay(content=f"**{user}:** ok, let's continue"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.ActionRow(
+                discord.ui.Button(style=discord.ButtonStyle.secondary,label="Continue walking", custom_id="button-continue-walking-2"),
+                discord.ui.Button(style=discord.ButtonStyle.secondary,label="Say: \"forget about that, maybe it was the light\"", disabled=True, custom_id="gjirfjgrjgureger")
+            )
+
+        )
+
+
+
 
 class Level_1_n6(discord.ui.LayoutView):    
     def __init__(self, user):
@@ -308,6 +330,8 @@ async def on_interaction(interaction: discord.Interaction):
         await message.edit(view=Level_1_n8(), attachments=[discord.File("assets/screen_8.png")])
         await asyncio.sleep(2)
         await message.edit(view=Level_1_n9(), attachments=[discord.File("assets/screen_9.png")])
+    elif cid == "maybe-it-was-the-light":
+        await interaction.response.edit_message(view=Level_1_n10(), attachments=[discord.File("assets/screen_10.png")])
 
           
 
