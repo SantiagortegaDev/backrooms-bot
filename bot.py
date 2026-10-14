@@ -68,7 +68,7 @@ class Level_1_n2(discord.ui.LayoutView):
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
-        discord.ui.TextDisplay(content=f"**{user}:** how long until we leave?\n**John:** we're about to reach Sector 7 **\\*sigh*** it won't be long now."),
+        discord.ui.TextDisplay(content=f"**@{user}:** how long until we leave?\n**John:** we're about to reach Sector 7 **\\*sigh*** it won't be long now."),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.ActionRow(
                 discord.ui.Button(
@@ -152,7 +152,7 @@ class Level_1_n5(discord.ui.LayoutView):
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
-        discord.ui.TextDisplay(content=f"**{user}:** what was that?\n**John:** what?"),
+        discord.ui.TextDisplay(content=f"**@{user}:** what was that?\n**John:** what?"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.ActionRow(
                 discord.ui.Button(
@@ -181,7 +181,7 @@ class Level_1_n10(discord.ui.LayoutView):
                 )
             ),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
-            discord.ui.TextDisplay(content=f"**{user}:** ok, let's continue"),
+            discord.ui.TextDisplay(content=f"**@{user}:** ok, let's continue"),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
             discord.ui.ActionRow(
                 discord.ui.Button(style=discord.ButtonStyle.secondary,label="Continue walking", custom_id="button-continue-walking-2"),
@@ -205,7 +205,7 @@ class Level_1_n6(discord.ui.LayoutView):
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
-        discord.ui.TextDisplay(content=f"**{user}:** i think i saw someone\n**John:** from the team?\n**Radio | John:** Thomas, Carl, can you hear me?\n**Radio: ** **\\*static***"),
+        discord.ui.TextDisplay(content=f"**@{user}:** i think i saw someone\n**John:** from the team?\n**Radio | John:** Thomas, Carl, can you hear me?\n**Radio: ** **\\*static***"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.ActionRow(
                 discord.ui.Button(
@@ -287,9 +287,183 @@ class Level_1_n9(discord.ui.LayoutView):
         discord.ui.ActionRow(discord.ui.Button(style=discord.ButtonStyle.secondary,label='Say: "is this supposed to be like this?"',custom_id="is-this-supposed-to-be-like-this"),discord.ui.Button(style=discord.ButtonStyle.secondary,label='Shout: "HELP!"',custom_id="button-shout-help"))
         )
 
+class Level_1_n11(discord.ui.LayoutView):
+    def __init__(self, user):
+      super().__init__()
+      container1=discord.ui.Container(
+          discord.ui.TextDisplay(content="# Recording 10:39"),
+          discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+          discord.ui.MediaGallery(
+              discord.MediaGalleryItem(
+                  media="attachment://screen_10.png"
+              )
+          ),
+          discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+          discord.ui.TextDisplay(content=f"**@{user}:** is this supposed to be like this?\n**Jonh:** Of course it shouldn't be like this, let me call the supervisor\n**Radio:** **\\*static***\n**John:** Well i will let you choose the path"),
+          discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+          discord.ui.TextDisplay(content="**Let me choose:**"),
+          discord.ui.ActionRow(
+              discord.ui.Button(
+                  style=discord.ButtonStyle.secondary,
+                  label="▓▓",
+                  custom_id="choose-path-1"
+              ),
+              discord.ui.Button(
+                  style=discord.ButtonStyle.secondary,
+                  label="▓▓",
+                  custom_id="choose-path-2"
+              ),
+              discord.ui.Button(
+                  style=discord.ButtonStyle.secondary,
+                  label="▓▓",
+                  custom_id="choose-path-3"
+              ),
+              discord.ui.Button(
+                  style=discord.ButtonStyle.secondary,
+                  label="▓▓",
+                  custom_id="choose-path-4"
+              )
+          )
+      )
+      self.add_item(container1)
 
+class Level_1_n12(discord.ui.LayoutView):
+    def __init__(self,user):
+        super().__init__()
+        container1=discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:39"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(
+                    media="attachment://screen_11.png"
+                )
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.TextDisplay(content=f"**@{user}:** HELP!\n**Jonh:** no one is going to listen you\n**Radio:** **\\*static***\n**Jonh:** well, the radio don't have signal, choose a path to continue"),
+            discord.ui.ActionRow(
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="▓▓",
+                    custom_id="choose-path-1"
+                ),
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    ĺabel="▓▓",
+                    custom_id="choose-path-2"
+                ),
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="▓▓",
+                    custom_id="choose-path-3"
+                ),
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="▓▓",
+                    custom_id="choose-path-4"
+                )
+            )
+        )      
+        self.add_item(container1)
 
+class Level_1_n13(discord.ui.LayoutView):
+    def __init__(self, user):
+        super().__init__()
+        container1=discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:40"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(
+                    media="attachment://screen_12.png"
+                )
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.TextDisplay(content=f"**Jonh:** ok, let's g.. wait *\\*starts whispering** \n-# i think i listen something"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.ActionRow(
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="RUN",
+                    custom_id="button-run"
+                )
+            )
+        )
 
+class Level_1_n14(discord.ui.LayoutView):
+        container1=discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:41"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(
+                    media="attachment://screen_13.png"
+                )
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.ActionRow(
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="\u200b",
+                    custom_id="ngjrkegkjrwjgfiljoejfl"
+                )
+            )
+        )
+
+class Level_1_n15(discord.ui.LayoutView):
+    container1=discord.ui.Container(
+        discord.ui.TextDisplay(content="# Recording 10:41"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(
+            discord.MediaGalleryItem(
+                media="attachment://screen_14.png"
+            )
+        ),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(
+            discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                label="\u200b",
+                custom_id="fnsuehfukwhfulqe"
+            )
+        )
+    )        
+
+class Level_1_n16(discord.ui.LayoutView):
+    container1=discord.ui.Container(
+        discord.TextDisplay(content="# Recording 10:41"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(
+            discord.MediaGalleryItem(
+                media="attachment://screen_15.png"
+            )
+        ),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(
+            discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                label="\u200b",
+                custom_id="nrsnfglwefleqfjlw"
+            )
+        )
+    )
+
+class Level_1_n17(discord.ui.LayoutView):
+    container=discord.ui.Container(
+        discord.TextDisplay(content="# Recording 10:41"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(
+            discord.MediaGalleryItem(
+                media="attachment://screen_16.png"
+            )
+        ),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(
+            discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                label="\u200b",
+                custom_id="vnjdsnfljajfilael"
+            )
+        )
+
+    )
 
 @bot.event
 async def on_ready():
@@ -331,7 +505,26 @@ async def on_interaction(interaction: discord.Interaction):
         await asyncio.sleep(2)
         await message.edit(view=Level_1_n9(), attachments=[discord.File("assets/screen_9.png")])
     elif cid == "maybe-it-was-the-light":
-        await interaction.response.edit_message(view=Level_1_n10(), attachments=[discord.File("assets/screen_10.png")])
+        await interaction.response.edit_message(view=Level_1_n10(interaction.user.display_name), attachments=[discord.File("assets/screen_6.png")])
+    elif cid == "is-this-supposed-to-be-like-this":
+        await interaction.response.edit_message(view=Level_1_n11(interaction.user.display_name), attachments=[discord.File("assets/screen_10.png")])
+    elif cid == "button-shout-help":
+        await interaction.response.edit_message(view=Level_1_n12(interaction.user.display_name), attachments=[discord.File("assets/screen_11.png")])
+    elif cid == "choose-path-1" or cid == "choose-path-2" or cid == "choose-path-3" or cid == "choose-path-4":
+        message=interaction.message
+        await interaction.response.edit_message(view=Level_1_n13(interaction.user.display_name), attachments=[discord.File("assets/screen_12.png")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n14(), attachments=[discord.File("assets/screen_13.png")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n15(), attachments=[discord.File("assets/screen_14.png")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n16(), attachments=[discord.File("assets/screen_15.png")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n17(), attachments=[discord.File("assets/screen_16.png")])
+
+
+
+
 
           
 
