@@ -402,7 +402,7 @@ class Level_1_n14(discord.ui.LayoutView):
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
                     label="\u200b",
-                    custom_id="ngjrkegkjrwjgfiljoejfl"
+                    custom_id="njjfsjdoidjfsodsds"
                 )
             )
         )
@@ -428,7 +428,7 @@ class Level_1_n15(discord.ui.LayoutView):
 
 class Level_1_n16(discord.ui.LayoutView):
     container1=discord.ui.Container(
-        discord.TextDisplay(content="# Recording 10:41"),
+        discord.ui.TextDisplay(content="# Recording 10:41"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
@@ -447,7 +447,7 @@ class Level_1_n16(discord.ui.LayoutView):
 
 class Level_1_n17(discord.ui.LayoutView):
     container=discord.ui.Container(
-        discord.TextDisplay(content="# Recording 10:41"),
+        discord.ui.TextDisplay(content="# Recording 10:41"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
@@ -462,7 +462,6 @@ class Level_1_n17(discord.ui.LayoutView):
                 custom_id="vnjdsnfljajfilael"
             )
         )
-
     )
 
 @bot.event
@@ -524,9 +523,6 @@ async def on_interaction(interaction: discord.Interaction):
 
 
 
-
-
-          
 
 
 
