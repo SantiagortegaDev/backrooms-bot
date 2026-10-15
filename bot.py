@@ -36,7 +36,7 @@ class Level_1_n1(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_1.png",
+                media="attachment://screen_1.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -64,7 +64,7 @@ class Level_1_n2(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_2.png",
+                media="attachment://screen_2.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -92,7 +92,7 @@ class Level_1_n3(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_3.png",
+                media="attachment://screen_3_1.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -119,7 +119,7 @@ class Level_1_n4(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_4.png",
+                media="attachment://screen_4.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -134,7 +134,7 @@ class Level_1_n4(discord.ui.LayoutView):
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
                     label="Say: \"i think i saw someone\"",
-                    custom_id="i-think-i-saw someone",
+                    custom_id="i-think-i-saw-someone",
                 ),
         ),
     )
@@ -148,7 +148,7 @@ class Level_1_n5(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_5.png",
+                media="attachment://screen_5.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -177,7 +177,7 @@ class Level_1_n10(discord.ui.LayoutView):
             discord.ui.TextDisplay(content="# Recording 10:36"),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
             discord.ui.MediaGallery(
-                discord.MediaGalleryItem(media="attachment://screen_6.png"
+                discord.MediaGalleryItem(media="attachment://screen_6.webp"
                 )
             ),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -189,6 +189,7 @@ class Level_1_n10(discord.ui.LayoutView):
             )
 
         )
+        self.add_item(container1)
 
 
 
@@ -201,7 +202,7 @@ class Level_1_n6(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_6.png",
+                media="attachment://screen_6.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -230,7 +231,7 @@ class Level_1_n7(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_7.png",
+                media="attachment://screen_7.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -256,7 +257,7 @@ class Level_1_n8(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_8.png",
+                media="attachment://screen_8.webp",
             ),
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -280,7 +281,7 @@ class Level_1_n9(discord.ui.LayoutView):
     container1 = discord.ui.Container(
         discord.ui.TextDisplay(content="# Recording 10:38"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
-        discord.ui.MediaGallery(discord.MediaGalleryItem(media="attachment://screen_9.png"),),
+        discord.ui.MediaGallery(discord.MediaGalleryItem(media="attachment://screen_9.webp"),),
         discord.ui.Separator(visible=True,spacing=discord.SeparatorSpacing.small),
         discord.ui.TextDisplay(content="**Jonh:** Oh no"),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -295,7 +296,7 @@ class Level_1_n11(discord.ui.LayoutView):
           discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
           discord.ui.MediaGallery(
               discord.MediaGalleryItem(
-                  media="attachment://screen_10.png"
+                  media="attachment://screen_10.webp"
               )
           ),
           discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -335,11 +336,13 @@ class Level_1_n12(discord.ui.LayoutView):
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
             discord.ui.MediaGallery(
                 discord.MediaGalleryItem(
-                    media="attachment://screen_11.png"
+                    media="attachment://screen_11.webp"
                 )
             ),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
             discord.ui.TextDisplay(content=f"**@{user}:** HELP!\n**Jonh:** no one is going to listen you\n**Radio:** **\\*static***\n**Jonh:** well, the radio don't have signal, choose a path to continue"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.TextDisplay(content="**Let me choose:**"),
             discord.ui.ActionRow(
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
@@ -348,7 +351,7 @@ class Level_1_n12(discord.ui.LayoutView):
                 ),
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
-                    ĺabel="▓▓",
+                    label="▓▓",
                     custom_id="choose-path-2"
                 ),
                 discord.ui.Button(
@@ -373,7 +376,7 @@ class Level_1_n13(discord.ui.LayoutView):
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
             discord.ui.MediaGallery(
                 discord.MediaGalleryItem(
-                    media="attachment://screen_12.png"
+                    media="attachment://screen_12.webp"
                 )
             ),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -387,6 +390,7 @@ class Level_1_n13(discord.ui.LayoutView):
                 )
             )
         )
+        self.add_item(container1)
 
 class Level_1_n14(discord.ui.LayoutView):
         container1=discord.ui.Container(
@@ -394,7 +398,7 @@ class Level_1_n14(discord.ui.LayoutView):
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
             discord.ui.MediaGallery(
                 discord.MediaGalleryItem(
-                    media="attachment://screen_13.png"
+                    media="attachment://screen_13.webp"
                 )
             ),
             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -402,7 +406,8 @@ class Level_1_n14(discord.ui.LayoutView):
                 discord.ui.Button(
                     style=discord.ButtonStyle.secondary,
                     label="\u200b",
-                    custom_id="njjfsjdoidjfsodsds"
+                    custom_id="njjfsjdoidjfsodsds",
+                    disabled=True
                 )
             )
         )
@@ -413,7 +418,7 @@ class Level_1_n15(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_14.png"
+                media="attachment://screen_14.webp"
             )
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -421,7 +426,8 @@ class Level_1_n15(discord.ui.LayoutView):
             discord.ui.Button(
                 style=discord.ButtonStyle.secondary,
                 label="\u200b",
-                custom_id="fnsuehfukwhfulqe"
+                custom_id="fnsuehfukwhfulqe",
+                disabled=True
             )
         )
     )        
@@ -432,7 +438,7 @@ class Level_1_n16(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_15.png"
+                media="attachment://screen_15.webp"
             )
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -440,7 +446,8 @@ class Level_1_n16(discord.ui.LayoutView):
             discord.ui.Button(
                 style=discord.ButtonStyle.secondary,
                 label="\u200b",
-                custom_id="nrsnfglwefleqfjlw"
+                custom_id="nrsnfglwefleqfjlw",
+                disabled=True
             )
         )
     )
@@ -451,7 +458,7 @@ class Level_1_n17(discord.ui.LayoutView):
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
         discord.ui.MediaGallery(
             discord.MediaGalleryItem(
-                media="attachment://screen_16.png"
+                media="attachment://screen_16.webp"
             )
         ),
         discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
@@ -459,10 +466,42 @@ class Level_1_n17(discord.ui.LayoutView):
             discord.ui.Button(
                 style=discord.ButtonStyle.secondary,
                 label="\u200b",
-                custom_id="vnjdsnfljajfilael"
+                custom_id="vnjdsnfljajfilael",
+                disabled=True
             )
         )
     )
+
+class Level_1_n18(discord.ui.LayoutView):
+    container1=discord.ui.Container(
+        discord.ui.TextDisplay(content="# Recording 10:33"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(
+            discord.MediaGalleryItem(media="attachment://screen_3.webp")
+        ),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(
+            discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                label="\u200b",
+                custom_id="fnjkdsnfgljflkk",
+                disabled=True
+            ),
+            discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                label="\u200b",
+                custom_id="fjkeafjlaejfliaejl",
+                disabled=True
+            )
+        )
+    )
+
+
+class Level_1_n19(discord.ui.LayoutView):
+    container1=discord.ui.Container(
+        discord.ui.TextDisplay(content="# Recording 10:43"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small)
+    )    
 
 @bot.event
 async def on_ready():
@@ -484,49 +523,61 @@ async def on_interaction(interaction: discord.Interaction):
         canal = await interaction.guild.create_text_channel(
             "level-01", category=category_user, overwrites=category_perms
         )
-        await canal.send(view=Level_1_n1(), files=[discord.File("assets/screen_1.png")])
+        await canal.send(view=Level_1_n1(), files=[discord.File("assets/screen_1.webp")])
     elif cid == "button-how-long-until-we-leave":
-        await interaction.response.edit_message(view=Level_1_n2(interaction.user.display_name), attachments=[discord.File("assets/screen_2.png")])
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n2(interaction.user.display_name), attachments=[discord.File("assets/screen_2.webp")])
     elif cid == "button-continue-walking":
+        await interaction.response.defer()
         message=interaction.message
-        await interaction.response.edit_message(view=Level_1_n3(), attachments=[discord.File("assets/screen_3.png")])
-        await asyncio.sleep(2)
-        await message.edit(view=Level_1_n4(), attachments=[discord.File("assets/screen_4.png")])
+        await interaction.edit_original_response(view=Level_1_n3(), attachments=[discord.File("assets/screen_3_1.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n18(), attachments=[discord.File("assets/screen_3.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n4(), attachments=[discord.File("assets/screen_4.webp")])
     elif cid == "what-was-that":
-        await interaction.response.edit_message(view=Level_1_n5(interaction.user.display_name), attachments=[discord.File("assets/screen_5.png")])
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n5(interaction.user.display_name), attachments=[discord.File("assets/screen_5.webp")])
     elif cid == "i-think-i-saw-someone":
-        await interaction.response.edit_message(view=Level_1_n6(interaction.user.display_name), attachments=[discord.File("assets/screen_6.png")])
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n6(interaction.user.display_name), attachments=[discord.File("assets/screen_6.webp")])
     elif cid == "button-continue-walking-2":
+        await interaction.response.defer()
         message= interaction.message
-        await interaction.response.edit_message(view=Level_1_n7(), attachments=[discord.File("assets/screen_7.png")])
-        await asyncio.sleep(2)
-        await message.edit(view=Level_1_n8(), attachments=[discord.File("assets/screen_8.png")])
-        await asyncio.sleep(2)
-        await message.edit(view=Level_1_n9(), attachments=[discord.File("assets/screen_9.png")])
+        await interaction.edit_original_response(view=Level_1_n7(), attachments=[discord.File("assets/screen_7.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n8(), attachments=[discord.File("assets/screen_8.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n9(), attachments=[discord.File("assets/screen_9.webp")])
     elif cid == "maybe-it-was-the-light":
-        await interaction.response.edit_message(view=Level_1_n10(interaction.user.display_name), attachments=[discord.File("assets/screen_6.png")])
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n10(interaction.user.display_name), attachments=[discord.File("assets/screen_6.webp")])
     elif cid == "is-this-supposed-to-be-like-this":
-        await interaction.response.edit_message(view=Level_1_n11(interaction.user.display_name), attachments=[discord.File("assets/screen_10.png")])
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n11(interaction.user.display_name), attachments=[discord.File("assets/screen_10.webp")])
     elif cid == "button-shout-help":
-        await interaction.response.edit_message(view=Level_1_n12(interaction.user.display_name), attachments=[discord.File("assets/screen_11.png")])
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n12(interaction.user.display_name), attachments=[discord.File("assets/screen_11.webp")])
     elif cid == "choose-path-1" or cid == "choose-path-2" or cid == "choose-path-3" or cid == "choose-path-4":
+        await interaction.response.defer()
         message=interaction.message
-        await interaction.response.edit_message(view=Level_1_n13(interaction.user.display_name), attachments=[discord.File("assets/screen_12.png")])
+        await interaction.edit_original_response(view=Level_1_n13(interaction.user.display_name), attachments=[discord.File("assets/screen_12.webp")])
+        
+    elif cid == "button-run":
+        await interaction.response.defer()
+        message=interaction.message
+        await interaction.edit_original_response(view=Level_1_n14(), attachments=[discord.File("assets/screen_13.webp")])
         await asyncio.sleep(1.5)
-        await message.edit(view=Level_1_n14(), attachments=[discord.File("assets/screen_13.png")])
+        await message.edit(view=Level_1_n15(), attachments=[discord.File("assets/screen_14.webp")])
         await asyncio.sleep(1.5)
-        await message.edit(view=Level_1_n15(), attachments=[discord.File("assets/screen_14.png")])
+        await message.edit(view=Level_1_n16(), attachments=[discord.File("assets/screen_15.webp")])
         await asyncio.sleep(1.5)
-        await message.edit(view=Level_1_n16(), attachments=[discord.File("assets/screen_15.png")])
-        await asyncio.sleep(1.5)
-        await message.edit(view=Level_1_n17(), attachments=[discord.File("assets/screen_16.png")])
-
-
-
+        await message.edit(view=Level_1_n17(), attachments=[discord.File("assets/screen_16.webp")])
 
 
 
     elif cid == "button-level-1-exit":
+        await interaction.response.defer()
         await interaction.channel.edit(name="l͓̦ͨ͑ͥe͑̓ͯv̩̞͒͐̌͆ḛ̗̻l̳ͬ-̗̄͛̃0̣̪̳̮ͬ̔ͨ1̉̆ͤ")
         await interaction.response.send_message("Linking...", ephemeral=True)
         category_perms={interaction.user: discord.PermissionOverwrite(view_channel=True), interaction.guild.default_role: discord.PermissionOverwrite(view_channel=False)}
