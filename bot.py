@@ -500,8 +500,474 @@ class Level_1_n18(discord.ui.LayoutView):
 class Level_1_n19(discord.ui.LayoutView):
     container1=discord.ui.Container(
         discord.ui.TextDisplay(content="# Recording 10:43"),
-        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small)
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.MediaGallery(
+            discord.MediaGalleryItem(
+                media="attachment://screen_17.webp")
+        ),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.TextDisplay(content="**Jonh:** I'm a bit tired, i think that's enough"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.ActionRow(
+            discord.ui.Button(
+                label="Continue walking",
+                style=discord.ButtonStyle.secondary,
+                custom_id="button-2-continue-walking"
+            )
+        )
     )    
+
+class Level_1_n20(discord.ui.LayoutView):
+        container1=discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:44"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(
+                    media="attachment://screen_18.webp")
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.TextDisplay(content="**\\*You see a door***"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.ActionRow(
+                discord.ui.Button(
+                    label="Say: \"Wait, look, a door\"",
+                    style=discord.ButtonStyle.secondary,
+                    custom_id="button-wait-a-door"
+                ),
+                discord.ui.Button(
+                    label="Say: \"THE EXIT?!?\"",
+                    style=discord.ButtonStyle.secondary,
+                    custom_id="button-the-exit-fake-xd"
+                )
+            )
+        )    
+
+class Level_1_n21(discord.ui.LayoutView):
+        def __init__(self, user):
+         super().__init__()     
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:44"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_19.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.TextDisplay(content=f"**@{user}:** THE EXIT?!?\n**Jonh:** let's hope so, let's see what's inside"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Look inside the door",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="inside-the-door"
+                 ),
+             )
+         )    
+         self.add_item(container1)
+
+class Level_1_n22(discord.ui.LayoutView):
+        def __init__(self, user):
+         super().__init__()    
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:46"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_19.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.TextDisplay(content=f"**@{user}:** wait, look, a door\n**Jonh:** what's inside?"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Look inside the door",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="inside-the-door"
+                 ),
+             )
+         )    
+         self.add_item(container1)
+
+class Level_1_n23(discord.ui.LayoutView):
+        container1=discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:47"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(
+                    media="attachment://screen_20.webp")
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.ActionRow(
+                discord.ui.Button(
+                    label="\u200b",
+                    style=discord.ButtonStyle.secondary,
+                    custom_id="fejwkhfjkewjfhew",
+                    disabled=True
+                ),
+            )
+        )    
+
+class Level_1_n24(discord.ui.LayoutView):
+        def __init__(self, user):
+         super().__init__()
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:48"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_21.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.TextDisplay(content=f"**@{user}:** well, another hallway"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Say: \"what's exactly this place?\"",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="whats-this-place"
+                 ),
+                 discord.ui.Button(
+                     label="Say: \"who pays the electricity bill?\"",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="who-pays-electricity"
+                 )
+             )
+         )    
+         self.add_item(container1)    
+
+class Level_1_n25(discord.ui.LayoutView):
+        container1=discord.ui.Container(
+            discord.ui.TextDisplay(content="# Recording 10:49"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.MediaGallery(
+                discord.MediaGalleryItem(
+                    media="attachment://screen_22.webp")
+            ),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.TextDisplay(content="**\\*You hear the door close***"),
+            discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+            discord.ui.ActionRow(
+                discord.ui.Button(
+                    label="Turn my head",
+                    style=discord.ButtonStyle.secondary,
+                    custom_id="turn-my-head"
+                ),
+                discord.ui.Button(
+                    label="Say: \"Jonh tell me that you close the door\"",
+                    style=discord.ButtonStyle.secondary,
+                    custom_id="jonh-tell-close-door"
+                )
+            )
+        )
+
+
+class Level_1_n26(discord.ui.LayoutView):
+        def __init__(self, user):
+         super().__init__()
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:50"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_23.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.TextDisplay(content=f"**@{user}:** jonh tell me that you closes the door\n**Jonh:** no, i didn't close it"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Turn my head",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="turn-my-head"
+                 ),
+                 discord.ui.Button(
+                     label="Say: \"Jonh tell me that you close the door\"",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="jonh-tell-close-door",
+                     disabled=True
+                 )
+             )
+         )
+         self.add_item(container1)
+
+class Level_1_n27(discord.ui.LayoutView):
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:51"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_24.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Check if the door opens",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="check-the-door"
+                 )
+             )
+         )
+
+class Level_1_n28(discord.ui.LayoutView):
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:52"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_25.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="\u200b",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="dfjkdshfjksdkf",
+                     disabled=True
+                 )
+             )
+         )
+
+class Level_1_n29(discord.ui.LayoutView):
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:52"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_26.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.TextDisplay(content="**\\*The door didn't open***"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Say: \"what do we do now?\"",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="what-do-we-do-now"
+                 ),
+                 discord.ui.Button(
+                      label="Try again",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="try-again"
+                 )
+             )
+         )
+
+class Level_1_n30(discord.ui.LayoutView):
+         container1=discord.ui.Container(
+             discord.ui.TextDisplay(content="# Recording 10:53"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.MediaGallery(
+                 discord.MediaGalleryItem(
+                     media="attachment://screen_26.webp")
+             ),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.TextDisplay(content="**\\*The door is still locked***"),
+             discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+             discord.ui.ActionRow(
+                 discord.ui.Button(
+                     label="Say: \"what do we do now?\"",
+                     style=discord.ButtonStyle.secondary,
+                     custom_id="what-do-we-do-now"
+                 ),
+                 discord.ui.Button(
+                      label="Try again",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="try-again",
+                      disabled=True
+                 )
+             )
+         )
+
+class Level_1_n31(discord.ui.LayoutView):
+         def __init__(self, user):
+          super().__init__()
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:54"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_27.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content=f"**@{user}:** what do we do now? we can't go back\n**Jonh:** let's continue we need to leave"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="Continue walking",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="continue-walking-3-i-think"
+                  )
+              )
+          )
+          self.add_item(container1)
+
+class Level_1_n32(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:55"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_28.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content="**Jonh:** also, we are not authorized to answer those questions"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="Continue walking",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="continue-4-walking"
+                  )
+              )
+          )
+
+class Level_1_n33(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:55"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_29.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="jjdfsjfksdf",
+                      disabled=True
+                  )
+              )
+          )          
+
+class Level_1_n34(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:56"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_30.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="mjweknfjksd",
+                      disabled=True
+                  )
+              )
+          )
+
+class Level_1_n35(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:56"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_31.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="Say: \"well, it's the only option\"",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="only-option"
+                  ),
+                  discord.ui.Button(
+                    label="Say: \"and what do you propose?\"",
+                    style=discord.ButtonStyle.secondary,
+                    custom_id="what-do-you-proporse"
+                )
+              )
+          )
+
+class Level_1_n36(discord.ui.LayoutView):
+        def __init__(self, user):
+          super().__init__()
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:58"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_32.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content=f"**@{user}:** well, it's the only option\n**Jonh:** well, you're right about that, but i'm not going that way"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="Continue walking",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="continue-walking-555"
+                  )
+              )
+          )           
+          self.add_item(container1)
+
+class Level_1_n37(discord.ui.LayoutView):
+        def __init__(self, user):
+          super().__init__()
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:58"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_32.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content=f"**@{user}:** and what do you propose?\n**Jonh:** nothing, if you want continue, but i'm not going that way"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="Continue walking",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="continue-walking-555"
+                  )
+              )
+          )           
+          self.add_item(container1)
+
+class Level_1_n38(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:59"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_33.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="ueasdhfuikewf",
+                      disabled=True
+                  )
+              )
+          )           
+
+       
+class Level_1_n39(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:59"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_34.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="nsdjkfhsdukfsd",
+                      disabled=True
+                  )
+              )
+          )       
+
+
 
 @bot.event
 async def on_ready():
@@ -562,7 +1028,6 @@ async def on_interaction(interaction: discord.Interaction):
         await interaction.response.defer()
         message=interaction.message
         await interaction.edit_original_response(view=Level_1_n13(interaction.user.display_name), attachments=[discord.File("assets/screen_12.webp")])
-        
     elif cid == "button-run":
         await interaction.response.defer()
         message=interaction.message
@@ -573,6 +1038,69 @@ async def on_interaction(interaction: discord.Interaction):
         await message.edit(view=Level_1_n16(), attachments=[discord.File("assets/screen_15.webp")])
         await asyncio.sleep(1.5)
         await message.edit(view=Level_1_n17(), attachments=[discord.File("assets/screen_16.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n19(), attachments=[discord.File("assets/screen_17.webp")])
+
+    elif cid == "button-2-continue-walking":
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n20(), attachments=[discord.File("assets/screen_18.webp")])
+
+    elif cid == "button-wait-a-door":
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n22(interaction.user.display_name), attachments=[discord.File("assets/screen_19.webp")])
+    elif cid == "button-the-exit-fake-xd":
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n21(interaction.user.display_name), attachments=[discord.File("assets/screen_19.webp")])
+    elif cid == "inside-the-door":
+         await interaction.response.defer()
+         message = interaction.message
+         await interaction.edit_original_response(view=Level_1_n23(), attachments=[discord.File("assets/screen_20.webp")])
+         await asyncio.sleep(2)
+         await message.edit(view=Level_1_n24(interaction.user.display_name), attachments=[discord.File("assets/screen_21.webp")])
+    elif cid == "who-pays-electricity" or cid == "whats-this-place":
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n25(), attachments=[discord.File("assets/screen_22.webp")])
+    elif cid == "jonh-tell-close-door":
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n26(interaction.user.display_name), attachments=[discord.File("assets/screen_23.webp")])
+    elif cid == "turn-my-head":
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n27(), attachments=[discord.File("assets/screen_24.webp")])
+    elif cid == "check-the-door":
+         message = interaction.message
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n28(), attachments=[discord.File("assets/screen_25.webp")])
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n29(), attachments=[discord.File("assets/screen_26.webp")])
+    elif cid == "what-do-we-do-now":
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n31(interaction.user.display_name), attachments=[discord.File("assets/screen_27.webp")])   
+    elif cid == "try-again":
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n30(), attachments=[discord.File("assets/screen_26.webp")])      
+    elif cid == "continue-walking-3-i-think":
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n32(),attachments=[discord.File("assets/screen_28.webp")])
+    elif cid == "continue-4-walking":
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n33(), attachments=[discord.File("assets/screen_29.webp")])
+         await message = interaction.message
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n34(), attachments=[discord.File("assets/screen_30.webp")])   
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n35(), attachments=[discord.File("assets/screen_31.webp")])
+    elif cid == "only-option":
+         await interaction.response.defer()
+         await interaction.edit_original_response(view=Level_1_n36(interaction.user.display_name), attachments=[discord.File("assets/screen_32.webp")])
+    elif cid == "what-do-you-proporse":
+        await interaction.response.defer()
+        await interaction.edit_original_response(view=Level_1_n37(interaction.user.display_name), attachments=[discord.File("assets/screen_32.webp")])
+    elif cid == "continue-walking-555":
+        await interaction.response.defer()
+        message = interaction.message
+        await interaction.edit_original_response(view=Level_1_n38(), attachments=[discord.File("assets/screen_33.webp")])
+    
+
 
 
 
