@@ -868,6 +868,8 @@ class Level_1_n35(discord.ui.LayoutView):
                       media="attachment://screen_31.webp")
               ),
               discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content="**Jonh:** you're crazy if you think i'm going to keep going that way"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
               discord.ui.ActionRow(
                   discord.ui.Button(
                       label="Say: \"well, it's the only option\"",
@@ -967,6 +969,204 @@ class Level_1_n39(discord.ui.LayoutView):
               )
           )       
 
+class Level_1_n40(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:59"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_35.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="jsuofsjdlfsldfsd",
+                      disabled=True
+                  )
+              )
+          )       
+
+
+class Level_1_n41(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:59"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_36.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content="**Jonh:** ok, ok, i will going with you, we must not separate"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="Continue walking",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="continue-walking-11"
+                  )
+              )
+          )       
+
+class Level_1_n42(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 10:59"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_37.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="njkfsdhbkfhsdkuf",
+                      disabled=True
+                  )
+              )
+          )       
+
+class Level_1_n43(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 11:00"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_38.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="njkfsdhbkfhsdkuf",
+                      disabled=True
+                  )
+              )
+          )       
+
+class Level_1_n44(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 11:00"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_39.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="fnjdskfkjdsffdfsr",
+                      disabled=True
+                  )
+              )
+          )       
+
+class Level_1_n45(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 11:00"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_40.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="sdjiuofhdsukfsd",
+                      disabled=True
+                  )
+              )
+          )       
+
+class Level_1_n46(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 11:00"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_41.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="gnjkfgnjkfsnjfsd",
+                      disabled=True
+                  )
+              )
+          )       
+
+
+class Level_1_n47(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Recording 11:00"),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.MediaGallery(
+                  discord.MediaGalleryItem(
+                      media="attachment://screen_42.webp")
+              ),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.ActionRow(
+                  discord.ui.Button(
+                      label="\u200b",
+                      style=discord.ButtonStyle.secondary,
+                      custom_id="juifsdhukfhsdukfsdku",
+                      disabled=True
+                  )
+              )
+          )       
+
+
+class Level_1_n48(discord.ui.LayoutView):
+          container1=discord.ui.Container(
+              discord.ui.TextDisplay(content="# Stoping recording..."),
+              discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+              discord.ui.TextDisplay(content="Unlinking...")
+          )       
+
+class lastmessage(discord.ui.LayoutView):    
+    container1 = discord.ui.Container(
+        discord.ui.TextDisplay(content="Thank you for supporting the neural data collection program\nFor more details visit: [hͥͤtt̬̽p̫͗ͧ:͚/̎ͤ/ͬ̏b̃͒a͇͗̇c̬ḵ̂̑r̝͐̏ǒ̻õm̦̅̃s͑.͙̥ͫl̹̜o͕̭̊c͓͋̿aͨlͥ̐/͍̫ͦṉe̲̠ͤ̇u̯ra͍̱ͤl̠̽́-̣͉ͦp͔͇rͬ̉ọg̝̳͆ra̺m̲̅](https://hackclub.com/backrooms-neural-program-hmmm-it-seems-that-hack-club-want-to-hide-this-information)\n-# Backrooms organization."),
+    )
+    
+    container2 = discord.ui.Container(
+        discord.ui.TextDisplay(content="**Hey, santiago here!**"),
+        discord.ui.Separator(visible=True, spacing=discord.SeparatorSpacing.small),
+        discord.ui.TextDisplay(content="I hope you enjoy playing this little game\naaaaaand i would love to hear what you thought of it\n(pls don't ignore me)"),
+        discord.ui.ActionRow(
+                discord.ui.Button(
+                    style=discord.ButtonStyle.secondary,
+                    label="Send a message",
+                    custom_id="send-message-button",
+                ),
+        ),
+        discord.ui.TextDisplay(content="**Thanks for playing!!**"),
+    )
+    container3 = discord.ui.Container(
+         discord.ui.ActionRow(
+              discord.ui.Button(
+                   style=discord.ButtonStyle.secondary,
+                   label="Play again",
+                   custom_id="play-again-finally-you-did-it"
+              )
+         )
+    )
+
+class messagemodal(discord.ui.Modal, title="Send me a message"):
+    msg = discord.ui.TextInput(label="Message:", style=discord.TextStyle.long, required=True, placeholder="wow, that was the best game i ever played in almost 15 years...")
+
+    async def on_submit(self, interaction: discord.Interaction):
+        channel_msg = await bot.fetch_channel(1563329164625318038)
+        await channel_msg.send(f"**{interaction.user.display_name}:** {self.msg}")
+        await interaction.response.send_message(f"Thanks!", ephemeral=True)
 
 
 @bot.event
@@ -989,6 +1189,7 @@ async def on_interaction(interaction: discord.Interaction):
         canal = await interaction.guild.create_text_channel(
             "level-01", category=category_user, overwrites=category_perms
         )
+        await interaction.delete_original_response()
         await canal.send(view=Level_1_n1(), files=[discord.File("assets/screen_1.webp")])
     elif cid == "button-how-long-until-we-leave":
         await interaction.response.defer()
@@ -1084,7 +1285,7 @@ async def on_interaction(interaction: discord.Interaction):
     elif cid == "continue-4-walking":
          await interaction.response.defer()
          await interaction.edit_original_response(view=Level_1_n33(), attachments=[discord.File("assets/screen_29.webp")])
-         await message = interaction.message
+         message = interaction.message
          await asyncio.sleep(1.5)
          await message.edit(view=Level_1_n34(), attachments=[discord.File("assets/screen_30.webp")])   
          await asyncio.sleep(1.5)
@@ -1099,11 +1300,58 @@ async def on_interaction(interaction: discord.Interaction):
         await interaction.response.defer()
         message = interaction.message
         await interaction.edit_original_response(view=Level_1_n38(), attachments=[discord.File("assets/screen_33.webp")])
-    
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n39(), attachments=[discord.File("assets/screen_34.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n40(), attachments=[discord.File("assets/screen_35.webp")])
+        await asyncio.sleep(1.5)
+        await message.edit(view=Level_1_n41(), attachments=[discord.File("assets/screen_36.webp")])
+
+    elif cid == "continue-walking-11":
+         await interaction.response.defer()
+         message = interaction.message
+         await interaction.edit_original_response(view=Level_1_n42(), attachments=[discord.File("assets/screen_37.webp")])
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n43(), attachments=[discord.File("assets/screen_38.webp")])
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n44(), attachments=[discord.File("assets/screen_39.webp")])
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n45(), attachments=[discord.File("assets/screen_40.webp")])         
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n46(), attachments=[discord.File("assets/screen_41.webp")])         
+         await asyncio.sleep(1.5)
+         await message.edit(view=Level_1_n47(), attachments=[discord.File("assets/screen_42.webp")])
+         await interaction.channel.edit(name="l͓̦ͨ͑ͥe͑̓ͯv̩̞͒͐̌͆ḛ̗̻l̳ͬ-̗̄͛̃0̣̪̳̮ͬ̔ͨ1̉̆ͤ")
+         await asyncio.sleep(2)
+         await message.edit(view=Level_1_n48())
+         category_perms={interaction.user: discord.PermissionOverwrite(view_channel=True), interaction.guild.default_role: discord.PermissionOverwrite(view_channel=False)}
+         category_user=interaction.channel.category
+         await asyncio.sleep(1.5)
+         channel2 = await interaction.guild.create_text_channel(
+                     "the-end", category=category_user, overwrites=category_perms
+                 )
+         await channel2.send(view=lastmessage())
+         await interaction.channel.delete()
+    elif cid == "send-message-button":
+         await interaction.response.send_modal(messagemodal())
+    elif cid == "play-again-finally-you-did-it":
+         await interaction.channel.delete()
+         await interaction.channel.category.delete()
+         channel = interaction.guild.get_channel(1557387255335882892)
+         await channel.set_permissions(interaction.user, overwrite=None) 
 
 
 
 
+    #hey!, easter egg, i originaly plan to be like levels, like level 1-2-3, 
+    #but i realize that there aren't a lot of pictures of the pool rooms for example, 
+    #anyways i like the path i choose, here is the lore, only for the people that read this
+
+    #lore: you enter a neural data collection program of the backrooms org, that's the why are messages like linking...
+    #hackclub supports this program but it's private, some people has been found in the streets without last 
+    #memories and with 500 dolars in their pocket, so no one make questions
+    #you never enter the backrooms, your brain enter the backrooms, the alpha neurochip is the device you use 
+    #yeah, i know, i create this lore 3 minutes ago but it's cool xd
     elif cid == "button-level-1-exit":
         await interaction.response.defer()
         await interaction.channel.edit(name="l͓̦ͨ͑ͥe͑̓ͯv̩̞͒͐̌͆ḛ̗̻l̳ͬ-̗̄͛̃0̣̪̳̮ͬ̔ͨ1̉̆ͤ")
