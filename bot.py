@@ -1349,7 +1349,7 @@ async def on_interaction(interaction: discord.Interaction):
 
     #lore: you enter a neural data collection program of the backrooms org, that's the why are messages like linking...
     #hackclub supports this program but it's private, some people has been found in the streets without last 
-    #memories and with 500 dolars in their pocket, so no one make questions
+    #memories and with hackclub stickers in their pocket, so no one make questions
     #you never enter the backrooms, your brain enter the backrooms, the alpha neurochip is the device you use 
     #yeah, i know, i create this lore 3 minutes ago but it's cool xd
     elif cid == "button-level-1-exit":
